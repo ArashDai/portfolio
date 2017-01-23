@@ -1,9 +1,27 @@
 import React, { Component } from 'react';
+import Navbar from './Navbar';
+import About from './About';
+import Portfolio from './Portfolio';
+import Contact from './Contact';
 
 export default class App extends Component {
+
   render() {
     return (
-      <div>React simple starter</div>
+        <div>
+          <div className='' id='navWrapper'>        
+            <Navbar/>
+          </div>
+          <div className='wrapper'>
+            <About/>
+          </div>
+          <div className='wrapper'>
+            <Portfolio/>
+          </div>
+          <div className='wrapper'>
+            <Contact/>
+          </div>    
+        </div>
     );
-  }
-}
+  };
+};
