@@ -5,7 +5,7 @@ const Portfolio = () => {
     return(
         <div className='container noPadding'>
             <div className='col-xs-12' id='portfolio'>
-                <h2 className='text-center'>Portfolio</h2>
+                <h1 className='text-center'>Portfolio</h1>
 
                 <div className='imgWrapper col-xs-12 col-sm-6'>
                     <img className='img-responsive portfolioImg' src='./assets/bakeryscreen.png'/>

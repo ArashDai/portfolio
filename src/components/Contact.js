@@ -28,10 +28,9 @@ class Contact extends Component{
     const { handleSubmit } = this.props;
   
         return(
-            <div className='container noPadding'>
-                <form onSubmit={handleSubmit(submitForm)} className='col-xs-12' id='contact'>
-                    <h2 className='text-center'>Contact</h2>
-                    
+            <div className='container noPadding' id='contact'>
+                <h1 className='text-center'>Contact</h1>
+                <form onSubmit={handleSubmit(submitForm)} className='col-xs-12 col-sm-6'>
                     <Field component={renderInput} type='text' className='form-control' placeholder='Name' name='Name' /> 
                     
                     <Field component={renderInput} type='text' className='form-control' placeholder='Email' name='Email' />
@@ -41,7 +40,14 @@ class Contact extends Component{
                     <Field component={renderTextarea} className='form-control' placeholder='Message' name='Message' />
                     
                     <button type='submit' className='btn btn-primary'>Send</button>
-                </form>    
+                </form>
+                <div className='xs-hidden col-sm-6' >
+                    <p className='text-center' id='contactText'>
+                        Need a website?<br/>
+                        Have questions?<br/>
+                         
+                    </p>
+                </div>    
             </div>
         );
     }
