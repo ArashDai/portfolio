@@ -3,11 +3,11 @@ var path = require('path');
 var port = process.env.PORT || 8080;
 var app = express();
 var nodemailer = require('nodemailer');
-var account = (require('./secrets/secret')||{
+var account = {
     Username:ENV['username'],
     Password:ENV['password'],
     Reciever:ENV['reciever']
-});
+};
 var bodyParser = require('body-parser')
 
 app.use( bodyParser.json() );       
