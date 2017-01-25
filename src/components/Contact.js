@@ -41,13 +41,12 @@ class Contact extends Component{
                     
                     <button type='submit' className='btn btn-primary'>Send</button>
                 </form>
-                <div className='xs-hidden col-sm-6' >
-                    <p className='text-center' id='contactText'>
-                        Need a website?<br/>
-                        Have questions?<br/>
-                         
-                    </p>
-                </div>    
+                <div className='text-center hidden-xs col-sm-6' >
+                    <i id='contactText'className="fa fa-paper-plane-o" aria-hidden="true"></i> 
+                </div>
+                <div className='text-center col-xs-12' id='grebble'>
+                    <i className="fa fa-code" aria-hidden="true"></i>
+                </div>
             </div>
         );
     }

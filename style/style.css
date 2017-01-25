@@ -149,8 +149,11 @@ body{
 }
 
 #contactText{
-    padding-top:.3em;
-    font-size:24pt;
     color:#00ADB5;
-    font-family: 'Yellowtail', cursive;
+    font-size:12em;
+}
+
+#grebble{
+    color:#00ADB5;
+    font-size:2em; 
 }
