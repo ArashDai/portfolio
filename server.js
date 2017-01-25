@@ -4,9 +4,9 @@ var port = process.env.PORT || 8080;
 var app = express();
 var nodemailer = require('nodemailer');
 var account = {
-    Username:ENV['username'],
-    Password:ENV['password'],
-    Reciever:ENV['reciever']
+    Username:process.env['username'],
+    Password:process.env['password'],
+    Reciever:process.env['reciever']
 };
 var bodyParser = require('body-parser')
 
