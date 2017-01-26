@@ -33,7 +33,7 @@ class Contact extends Component{
                 <form onSubmit={handleSubmit(submitForm)} className='col-xs-12 col-sm-6'>
                     <Field component={renderInput} type='text' className='form-control' placeholder='Name' name='Name' /> 
                     
-                    <Field component={renderInput} type='text' className='form-control' placeholder='Email' name='Email' />
+                    <Field component={renderInput} type='email' className='form-control' placeholder='Email' name='Email' />
                     
                     <Field component={renderInput} type='text' className='form-control' placeholder='Phone' name='Phone' />
                     
