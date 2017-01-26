@@ -25,7 +25,7 @@ const renderTextarea = field => {
 class Contact extends Component{
 
     render(){
-        const { handleSubmit,resetForm } = this.props;
+        const { handleSubmit,reset } = this.props;
         return(
             <div className='container noPadding' id='contact'>
                 <h1 className='text-center'>Contact</h1>
@@ -38,7 +38,7 @@ class Contact extends Component{
                     
                     <Field component={renderTextarea} className='form-control' placeholder='Message' name='Message' />
                     
-                    <button type='submit' className='btn btn-primary'>Send</button>
+                    <button type='submit' className='btn btn-primary'onClick={reset} >Send</button>
                 </form>
                 <div className='text-center hidden-xs col-sm-6' >
                     <i id='contactText'className="fa fa-paper-plane-o" aria-hidden="true"></i> 
