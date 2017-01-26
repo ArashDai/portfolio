@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import About from './About';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
+import Footer from './Footer';
 
 export default class App extends Component {
 
@@ -16,6 +17,7 @@ export default class App extends Component {
           <About/>
           <Portfolio/>
           <Contact/>
+          <Footer/>
         </div>
     );
   };
