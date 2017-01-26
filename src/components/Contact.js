@@ -23,13 +23,6 @@ const renderTextarea = field => {
 }
 
 class Contact extends Component{
-    
-    handleForm(){
-    const { handleSubmit,resetForm } = this.props;
-        submitForm()
-        resetForm()
-
-    }
 
     render(){
         const { handleSubmit,resetForm } = this.props;
