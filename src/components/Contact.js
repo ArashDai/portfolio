@@ -29,7 +29,7 @@ class Contact extends Component{
         return(
             <div className='container noPadding' id='contact'>
                 <h1 className='text-center'>Contact</h1>
-                <form onSubmitSuccess={reset()} onSubmit={handleSubmit(submitForm)} className='col-xs-12 col-sm-6'>
+                <form onSubmit={handleSubmit(submitForm).onSubmitSuccess(reset())} className='col-xs-12 col-sm-6'>
                     <Field component={renderInput} type='text' className='form-control' placeholder='Name' name='Name' /> 
                     <Field component={renderInput} type='email' className='form-control' placeholder='Email' name='Email' />
                     <Field component={renderInput} type='text' className='form-control' placeholder='Phone' name='Phone' />
