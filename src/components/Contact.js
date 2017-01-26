@@ -62,6 +62,13 @@ function validate(values){
     return errors;
 }
 
+const mapStateToProps = (state) => {
+    return{
+         onSubmitSuccess:() => reset(),
+         onSubmitFail:() => console.log('submit fail')
+    }
+}
+
 export default reduxForm({
     form:'ContactForm',
     validate

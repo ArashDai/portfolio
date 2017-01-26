@@ -15,8 +15,7 @@ export default class App extends Component {
           
           <About/>
           <Portfolio/>
-          <Contact onSubmitSuccess={() => console.log('submit success')}
-                   onSubmitFail={() => console.log('submit fail')}/>
+          <Contact/>
         </div>
     );
   };
