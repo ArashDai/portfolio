@@ -13,7 +13,7 @@ export function submitForm(values,dispatch,props){
 
     const request = axios.post('/contact',contactInfo)
     .then(
-        () => {  console.log('It Worked')},
+        () => {  props.reset() },
         () => {  console.log('Something Went Wrong')}
     )
     //right here need to handle success and error response from server
