@@ -6,8 +6,7 @@ const Root = process.env.PORT || 8080;
 
 
 export function submitForm(props){
-
-    const { resetForm } = this.props;
+    
     const contactInfo = {
         name:props.Name,
         phone:props.Phone,
