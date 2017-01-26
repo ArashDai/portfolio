@@ -7,6 +7,33 @@ body{
     background-repeat:repeat;
 }
 
+
+a:link {
+    color: #00ADB5;
+}
+
+/* visited link */
+a:visited {
+    color: #00ADB5;
+}
+
+/* mouse over link */
+a:hover {
+    color: orangered;
+    text-decoration: none;
+}
+li a:hover{
+    color:orangered !important;
+}
+i:hover {
+    color: orangered;
+}
+/* selected link */
+a:active {
+    color: orangered;
+}
+
+
 .navbar-brand{
     font-family: 'Yellowtail', cursive;
     color:#00ADB5 !important;
@@ -150,14 +177,43 @@ body{
 
 #contactText{
     color:#00ADB5;
-    font-size:12em;
+
 }
 
+input {
+    border-radius:0em !important;
+}
+
+textarea {
+    border-radius:0em !important;
+    resize: none;
+}
+#mybtn{
+    border-radius:0;
+    background-color:#00ADB5;
+    margin-bottom:1em;
+}
+#mybtn:hover{
+    background-color:orangered;
+}
+#plane{
+    background-color: transparent;
+    color:#00ADB5; 
+    font-size:12em;
+}
 #grebble{
     color:#00ADB5;
     font-size:2em; 
 }
 
 #footer{
-   background-color:#303841; 
+    background-color:#303841; 
+    color:#00ADB5;
+    font-size:14pt;
+    padding-top:1em
 }
+
+#padd{
+    padding-top:.7em;
+}
+

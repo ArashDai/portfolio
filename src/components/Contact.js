@@ -27,20 +27,17 @@ class Contact extends Component{
     render(){
         const { handleSubmit,reset,onSubmitSuccess,onSubmitFail } = this.props;
         return(
-            <div className='container noPadding' id='contact'>
+            <div className='container noPadding' id='contact' href='#contact'>
                 <h1 className='text-center'>Contact</h1>
                 <form onSubmit={handleSubmit(submitForm)} className='col-xs-12 col-sm-6'>
                     <Field component={renderInput} type='text' className='form-control' placeholder='Name' name='Name' /> 
                     <Field component={renderInput} type='email' className='form-control' placeholder='Email' name='Email' />
                     <Field component={renderInput} type='text' className='form-control' placeholder='Phone' name='Phone' />
                     <Field component={renderTextarea} className='form-control' placeholder='Message' name='Message' />
-                    <button type='submit' className='btn btn-primary' >Send</button>
+                    <button type='submit'id='mybtn' className='btn center-block' >Send</button>
                 </form>
                 <div className='text-center hidden-xs col-sm-6' >
-                    <i id='contactText'className="fa fa-paper-plane-o" aria-hidden="true"></i> 
-                </div>
-                <div className='text-center col-xs-12' id='grebble'>
-                    <i className="fa fa-code" aria-hidden="true"></i>
+                    <i id='contactText'className="fa fa-paper-plane-o" aria-hidden="true" id='plane'></i> 
                 </div>
             </div>
         );

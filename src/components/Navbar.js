@@ -17,9 +17,9 @@ const Navbar = () => {
 
         <div className="collapse navbar-collapse navbar-ex1-collapse text-center">
           <ul className="nav navbar-nav navbar-right">
-                <li><a href="#" className='navlink'>About</a></li>
-                <li><a href="#" className='navlink'>Portfolio</a></li>
-                <li><a href="#" className='navlink'>Contact</a></li>
+                <li><a href="#about" className='navlink'>About</a></li>
+                <li><a href="#portfolio" className='navlink'>Portfolio</a></li>
+                <li><a href="#contact" className='navlink'>Contact</a></li>
           </ul>
         </div>
       </nav>

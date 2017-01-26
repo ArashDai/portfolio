@@ -3,7 +3,7 @@ import React from 'react';
 
 const Portfolio = () => {
     return(
-        <div className='container noPadding'>
+        <div className='container noPadding' href='#portfolio'>
             <div className='col-xs-12' id='portfolio'>
                 <h1 className='text-center'>Portfolio</h1>
 
