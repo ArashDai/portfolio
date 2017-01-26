@@ -2,13 +2,13 @@ import axios from 'axios';
 
 export const SUBMIT_FORM = 'SUBMIT_FORM'
 
-export function submitForm(props){
-    console.log(props)
+export function submitForm(values,dispatch,values){
+    console.log(values,dispatch,props)
     const contactInfo = {
-        name:props.Name,
-        phone:props.Phone,
-        email:props.Email,
-        message:props.Message
+        name:values.Name,
+        phone:values.Phone,
+        email:values.Email,
+        message:values.Message
     }
 
     const request = axios.post('/contact',contactInfo)
