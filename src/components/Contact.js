@@ -31,13 +31,9 @@ class Contact extends Component{
                 <h1 className='text-center'>Contact</h1>
                 <form onSubmit={handleSubmit(submitForm)} className='col-xs-12 col-sm-6'>
                     <Field component={renderInput} type='text' className='form-control' placeholder='Name' name='Name' /> 
-                    
                     <Field component={renderInput} type='email' className='form-control' placeholder='Email' name='Email' />
-                    
                     <Field component={renderInput} type='text' className='form-control' placeholder='Phone' name='Phone' />
-                    
                     <Field component={renderTextarea} className='form-control' placeholder='Message' name='Message' />
-                    
                     <button type='submit' className='btn btn-primary' >Send</button>
                 </form>
                 <div className='text-center hidden-xs col-sm-6' >
