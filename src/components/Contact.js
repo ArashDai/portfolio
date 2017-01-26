@@ -25,7 +25,7 @@ const renderTextarea = field => {
 class Contact extends Component{
 
     render(){
-        const { handleSubmit,reset } = props;
+        const { handleSubmit,reset,onSubmitSuccess,onSubmitFail } = this.props;
         return(
             <div className='container noPadding' id='contact'>
                 <h1 className='text-center'>Contact</h1>
