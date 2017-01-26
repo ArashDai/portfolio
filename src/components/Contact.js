@@ -30,7 +30,7 @@ class Contact extends Component{
         return(
             <div className='container noPadding' id='contact'>
                 <h1 className='text-center'>Contact</h1>
-                <form onSubmit={handleSubmit(submitForm)} className='col-xs-12 col-sm-6'>
+                <form onSubmit={handleSubmit(submitForm.bind(this))} className='col-xs-12 col-sm-6'>
                     <Field component={renderInput} type='text' className='form-control' placeholder='Name' name='Name' /> 
                     
                     <Field component={renderInput} type='email' className='form-control' placeholder='Email' name='Email' />
