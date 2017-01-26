@@ -16,10 +16,9 @@ export function submitForm(props){
 
     const request = axios.post('/contact',contactInfo)
     .then(
-        () => {  console.log('IT WORKED')},
+        () => {  console.log('IT WORKED'), Window.Alert('it worked')},
         () => {  console.log('Something Went Wrong')}
     )
-    console.log(request)
     //right here need to handle success and error response from server
     //  if successful I want to : pop a modal that says you were successful
     //  if failed I want to : pop a modal that says your message failed please try again
