@@ -6,6 +6,7 @@ const Root = process.env.PORT || 8080;
 
 
 export function submitForm(props){
+    const { resetForm } = this.props;
 
     const contactInfo = {
         name:props.Name,
@@ -16,7 +17,7 @@ export function submitForm(props){
 
     const request = axios.post('/contact',contactInfo)
     .then(
-        () => {  console.log('IT WORKED'), Window.Alert('it worked')},
+        () => {  resetForm() },
         () => {  console.log('Something Went Wrong')}
     )
     //right here need to handle success and error response from server
