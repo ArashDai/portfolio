@@ -2,8 +2,6 @@ import React,{ Component } from 'react';
 import { Field, reduxForm } from 'redux-form';
 import { submitForm } from '../actions/index';
 
-const { handleSubmit,resetForm } = this.props;
-//wire up redux-form here, set up production server for nodemailer.
 
 
 const renderInput = field => {  
@@ -25,14 +23,16 @@ const renderTextarea = field => {
 }
 
 class Contact extends Component{
-
+    
     handleForm(){
+    const { handleSubmit,resetForm } = this.props;
         submitForm()
         resetForm()
+
     }
 
     render(){
-  
+        const { handleSubmit,resetForm } = this.props;
         return(
             <div className='container noPadding' id='contact'>
                 <h1 className='text-center'>Contact</h1>
