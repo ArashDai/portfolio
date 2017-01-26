@@ -7,8 +7,7 @@ const Root = process.env.PORT || 8080;
 
 
 export function submitForm(props){
-    console.log(props, Root)
-    //axios.post(/contact,)
+
     const contactInfo = {
         name:props.Name,
         phone:props.Phone,
@@ -16,6 +15,7 @@ export function submitForm(props){
         message:props.Message
     }
     const request = axios.post('/contact',contactInfo);
+    console.log(request)
     return {
         type:SUBMIT_FORM,
         payload:request

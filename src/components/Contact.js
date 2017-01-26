@@ -16,10 +16,10 @@ const renderInput = field => {
 
 const renderTextarea = field => { 
   return(
-  <div className={`form-group ${field.meta.touched && field.meta.error ? ' has-error' : '' }`}>
-    <textarea {...field.input} className='form-control' type={field.type}
-    placeholder={field.meta.touched && field.meta.error ? field.meta.error : field.input.name}/>
-  </div>
+    <div className={`form-group ${field.meta.touched && field.meta.error ? ' has-error' : '' }`}>
+        <textarea {...field.input} className='form-control' type={field.type}
+        placeholder={field.meta.touched && field.meta.error ? field.meta.error : field.input.name}/>
+    </div>
   )
 }
 

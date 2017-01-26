@@ -43,6 +43,7 @@ app.post('/contact',(req,res)=>{
             res.send(error)
             return console.log(error);
         }
+        res.send(200,'success');
         console.log('Message sent: ' + info.response);
     });
 });
