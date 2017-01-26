@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const SUBMIT_FORM = 'SUBMIT_FORM'
 
-export function submitForm(values,dispatch,values){
+export function submitForm(values,dispatch,props){
     console.log(values,dispatch,props)
     const contactInfo = {
         name:values.Name,
