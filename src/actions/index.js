@@ -3,7 +3,7 @@ import axios from 'axios';
 export const SUBMIT_FORM = 'SUBMIT_FORM'
 
 export function submitForm(props){
-
+    console.log(props)
     const contactInfo = {
         name:props.Name,
         phone:props.Phone,
