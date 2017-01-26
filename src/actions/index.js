@@ -2,11 +2,8 @@ import axios from 'axios';
 
 export const SUBMIT_FORM = 'SUBMIT_FORM'
 
-const Root = process.env.PORT || 8080;
-
-
 export function submitForm(props){
-    
+
     const contactInfo = {
         name:props.Name,
         phone:props.Phone,
